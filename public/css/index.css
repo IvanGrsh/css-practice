@@ -1,7 +1,92 @@
-html {
-  max-width: 720px;
+.card {
+}
+.card > p {
+  color: green;
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 1px blue;
 }
 
-body {
-  background: #fff;
+p:focus,
+p:active,
+p:hover {
+  -webkit-text-fill-color: rgb(255, 255, 0);
+  -webkit-text-stroke: 1px rgb(255, 0, 200);
+
+  direction: rtl;
+}
+
+#test {
+  color: unset;
+  -webkit-text-fill-color: unset;
+  -webkit-text-stroke: unset;
+
+  text-align: justify;
+
+  letter-spacing: 0.01em;
+}
+
+span {
+  text-align: left;
+  text-transform: uppercase;
+
+  text-decoration: underline solid red;
+}
+
+span:hover {
+  text-decoration-line: line-through;
+  text-decoration-style: wavy;
+}
+
+pre {
+  tab-size: 1;
+}
+
+* {
+  font-family: 'Roboto', Halvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  /* font-style: italic; */
+
+  font-display: swap;
+}
+
+span {
+  font-size: large;
+
+  font-weight: lighter;
+
+  /* font-style: oblique; */
+}
+
+p {
+  font-stretch: expanded;
+}
+
+.test {
+  display: none;
+}
+
+.block {
+  display: inline-block;
+  background: rgb(167, 167, 167);
+
+  margin: auto;
+  /* 
+  margin-right: 50px; */
+
+  /* width: 100px; */
+
+  /* height: auto; */
+
+  width: 100%;
+
+  /* max-width: 600px; */
+
+  /* min-height: 100px;
+
+  max-height: max-content; */
+
+  padding: 15px;
+
+  /* box-sizing: content-box; */
 }
