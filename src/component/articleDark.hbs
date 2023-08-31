@@ -1,0 +1,31 @@
+<div class="arcticles_page">
+	<div class="arcticles_section">
+		<div class="arcticles_head">
+			<h3 class="arcticles_title">Our Articles </h3>
+			<div class="arcticles_link">
+				<a href="#" class="click arcticles_bottom">View All</a>
+			</div>
+		</div>
+
+		<div class="arcticles_example">
+			{{#each articles}}
+			<div class="arcticles_card">
+
+
+				<img src="{{photo}}" alt="arcticles image" class="arcticles_image" id="{{id}}" />
+				<span class="{{#if isNew}} hot {{else}} hid {{/if}}"> NEW</span>
+
+
+				<h3 class="arcticles_name">{{name}}</h3>
+				<p class="arcticles_text">{{description}}</p>
+
+				<div>
+					<a href="#" class="click bottom ">Read All</a>
+				</div>
+			</div>
+			{{/each}}
+		</div>
+
+
+	</div>
+</div>

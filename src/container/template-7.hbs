@@ -1,0 +1,96 @@
+<div class="Page">
+	<div class="page_section">
+		<div class="page_content">
+
+			{{> headerDark}}
+			{{!-- {{#with header}}
+			<div class="">
+				<header class="header">
+					<div class="logo"><span>{{brandName}}</span></div>
+					{{> nav_link data=links}}
+
+				</header>
+
+				<section class="ad_section">
+					<div>
+						<span class="ad_header">Ad</span>
+						<a href="{{ad.url}}" class="header_link click">{{ad.text}}</a>
+					</div>
+
+					<div class="ad_user">
+						<span>User online: {{userOnline}}</span>
+					</div>
+				</section>
+
+			</div>
+			{{/with}} --}}
+
+
+			{{#with hero}}
+			<section class="main">
+				<h2 class="hero_title">{{title}}</h2>
+				<p class="hero_text">{{description}}</p>
+
+				<button>
+					<a href="{{button.url}}" class="click bottom">{{button.text}}</a>
+				</button>
+			</section>
+			{{/with}}
+
+
+			{{#with about}}
+			<section class="about">
+				<h2 class="heading_title">{{heading}}</h2>
+				<p class="info_text">{{info}}</p>
+			</section>
+			{{/with}}
+
+
+			{{> articleDark}}
+			{{!-- <div class="arcticles_page">
+				<div class="arcticles_section">
+					<div class="arcticles_head">
+						<h3 class="arcticles_title">Our Articles </h3>
+						<div class="arcticles_link">
+							<a href="#" class="click arcticles_bottom">View All</a>
+						</div>
+					</div>
+
+					<div class="arcticles_example">
+						{{#each articles}}
+						<div class="arcticles_card">
+
+
+							<img src="{{photo}}" alt="arcticles image" class="arcticles_image" id="{{id}}" />
+							<span class="{{#if isNew}} hot {{else}} hid {{/if}}"> NEW</span>
+
+
+							<h3 class="arcticles_name">{{name}}</h3>
+							<p class="arcticles_text">{{description}}</p>
+
+							<div>
+								<a href="#" class="click bottom ">Read All</a>
+							</div>
+						</div>
+						{{/each}}
+					</div>
+
+
+				</div>
+			</div> --}}
+
+
+			{{> footerDark}}
+			{{!-- {{#with footer}}
+			<footer class="footer">
+
+				{{>nav_footer data=page}}
+
+				<p class="footer_copyright">{{copyright}}</p>
+
+			</footer>
+			{{/with }} --}}
+
+		</div>
+	</div>
+</div>
